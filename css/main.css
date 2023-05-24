@@ -127,6 +127,27 @@ body {
 	will-change: transform;
 }
 
+.gradient-first {
+	position: absolute;
+	width: 300.63px;
+	height: 783.03px;	
+	background:  rgb(112,114,145,100);
+	filter: blur(125px);
+	opacity: 50%;
+	transform: rotate(-105.26deg);
+}
+
+.gradient-second {
+	position: absolute;
+	width: 150.63px;
+	height: 630.03px;
+	right: 0;	
+	background:  rgb(194,161,127,100);
+	filter: blur(125px);
+	opacity: 50%;
+	transform: rotate(-105.26deg);
+}
+
 .copy {
 	position: absolute;
 	bottom: calc(var(--index) * 2.5);
