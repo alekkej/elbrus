@@ -27,6 +27,8 @@ body {
 	
 }
 
+.scrollMajicFix{top:0 !important}
+
 .wrapper {
 
 }
@@ -97,8 +99,30 @@ body {
 	transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
 }
 
+navigation {
+	z-index: 3;
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	gap: calc(var(--index) * 5);	
+	background: rgb(255,255,255);
+	background: linear-gradient(281deg, rgba(255,255,255,1) 0%, rgba(112,114,145,1) 100%, rgba(112,114,145,1) 100%, rgba(112,114,145,1) 100%);
+	position: absolute;
+}
+
+.navigation-button {	
+	font-size: calc(var(--index) * .8);
+	height: calc(var(--index) * 1.5);
+	background: none;
+	border: 0;
+	cursor: pointer;
+	font-family: raleway-r_c;
+	text-transform: uppercase;
+}
+
 .main-article {
-	--main-article-transform: transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+	--main-article-transform: transform: translate3d(0, calc(var(--scrollTop) / 50), 0);
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -121,7 +145,7 @@ body {
 }
 .main-article__paragraph {
 	font-size: calc(var(--index) * .8);
-	margin-top: calc(var(--index) / 1.25);	
+	margin-top: calc(var(--index) / 1);
 	transform: var(--main-article-transform);
 	transition: var(--transition);
 	will-change: transform;

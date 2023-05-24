@@ -7,3 +7,10 @@ ScrollSmoother.create({
 	wrapper: '.wrapper',
 	content: '.content',
 })
+
+let st = ScrollTrigger.create({
+	pin: ".pin",
+	start: "top",
+	end: '+=1500'
+});
+
